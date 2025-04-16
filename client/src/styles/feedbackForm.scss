@@ -1,0 +1,88 @@
+/* FeedbackForm.scss */
+.feedback-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  &_content {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  &_title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &_textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 100px;
+    outline: none;
+    transition: border 0.3s ease;
+    &:focus {
+      border-color: #f8395a;
+    }
+  }
+
+  &_input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+    &:focus {
+      border-color: #f8395a;
+    }
+  }
+
+  &_button {
+    padding: 12px;
+    background-color: #f8395a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #d6354b;
+    }
+  }
+
+  &_success-message,
+  &_error-message {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: green;
+  }
+
+  &_error-message {
+    color: red;
+  }
+}

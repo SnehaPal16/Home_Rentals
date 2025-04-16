@@ -1,0 +1,41 @@
+.admin-dashboard {
+    padding: 20px;
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+      text-align: left;
+  
+      th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+  
+      th {
+        background-color: #f4f4f4;
+      }
+    }
+  
+    .block-btn, .unblock-btn {
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 5px;
+    }
+  
+    .block-btn {
+      background-color: #f44336;
+    }
+  
+    .unblock-btn {
+      background-color: #4caf50;
+    }
+  }
+  
